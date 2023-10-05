@@ -42,7 +42,7 @@ Console.WriteLine("Teve contato com pessoas com sintomas gripais nos últimos di
 respostas[2] = Console.ReadLine();
 for(int i = 1; i <= 3;i++)
 {
-    if(respostas[2].ToUpper() != "SIM" && respostas[1].ToUpper() != "NAO")
+    if(respostas[2].ToUpper() != "SIM" && respostas[2].ToUpper() != "NAO")
     {
         Console.WriteLine("Teve contato com pessoas com sintomas gripais nos últimos dias?");
         respostas[2] = Console.ReadLine();
@@ -93,4 +93,3 @@ else if(respostas[3].ToUpper() == "SIM")
 
 Console.WriteLine("Nome: {0} \nIdade: {1} \nSe o cartão de vacina está em dia: {2} \nSe teve sintomas recentemente: {3} \nSe teve contato com pessoas infectadas: {4} \nSe a pessoa está retornando de viagem: {5} \nA probabilidade dessa pessoa estar infectada: {6}% \nA orientação final do atendimento: {7}",nome.ToUpper(),idade,respostas[0].ToUpper(),respostas[1].ToUpper(),respostas[2].ToUpper(),respostas[3].ToUpper(),risco,orientaçao);
 Console.ReadLine();
-
